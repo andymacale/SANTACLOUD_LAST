@@ -33,18 +33,21 @@ public class MovimentoPersonaggio : MonoBehaviour
     private void Update()
     {
 
-        dirX = Input.GetAxisRaw("Horizontal");
+        if(PauseMenu.isPaused == true) {
+            dirX = Input.GetAxisRaw("Horizontal");
 
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
 
-        if(Input.GetButtonDown("Jump") && isGrounded())
-        {
+            if(Input.GetButtonDown("Jump") && isGrounded())
+            {
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x , jumpForce);
-        }
+            }
 
-        UpdateAnimationState();
+            UpdateAnimationState();
+        }
+        
 
     }
 

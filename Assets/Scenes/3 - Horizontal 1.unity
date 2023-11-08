@@ -84550,7 +84550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -270}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -2, y: -4.999939}
+  m_AnchoredPosition: {x: -2, y: -5}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169712682
@@ -92249,6 +92249,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Personaggio: {fileID: 1008776024}
+  seguiAsseX: 1
+  maxY: 0
+  minY: 0
 --- !u!4 &562746968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5333754772313366391, guid: d544e81063b9beb459a272087514eca5, type: 3}
@@ -93542,7 +93545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 510, y: -4.999939}
+  m_AnchoredPosition: {x: 510, y: -5}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544122280
@@ -94132,7 +94135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 415, y: -4.999939}
+  m_AnchoredPosition: {x: 415, y: -5}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804258219
@@ -95218,8 +95221,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8998452143513491780}
   - {fileID: 627650075282513162}
+  - {fileID: 8998452143513491780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -95334,6 +95337,7 @@ GameObject:
   - component: {fileID: 4038354703121192015}
   - component: {fileID: 4406469815468441961}
   - component: {fileID: 3986535678459262551}
+  - component: {fileID: 4406469815468441962}
   m_Layer: 5
   m_Name: Canvas_Pause
   m_TagString: Untagged
@@ -95385,7 +95389,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5262564308353755453}
+      - m_Target: {fileID: 4406469815468441962}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -95787,6 +95791,19 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
+--- !u!114 &4406469815468441962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464698995978175531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce508b643b0845b6baf2979eb3fa42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 5405465179066931837}
 --- !u!224 &4481903960911020851
 RectTransform:
   m_ObjectHideFlags: 0

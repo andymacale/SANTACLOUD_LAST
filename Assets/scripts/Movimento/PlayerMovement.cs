@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         };
 
         controls.Land.Jump.performed += ctx => Jump();
-
     }
 
 
@@ -81,5 +80,6 @@ public class PlayerMovement : MonoBehaviour
        //    }
         //}
     }
+
 
 }
